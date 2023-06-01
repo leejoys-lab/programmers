@@ -1,3 +1,5 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/181943
+
 solution("He11oWor1d", "lloWorl", 2);
 // splice(시작, 삭제할문자수, 대체할문자)
 function solution(my_string, overwrite_string, s) {
