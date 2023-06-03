@@ -1,3 +1,5 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/181935
+
 function solution(n) {
   let sum = 0;
 
