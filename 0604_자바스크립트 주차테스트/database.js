@@ -1,10 +1,20 @@
 const onRequest = indexedDB.open("programming", 1);
 
 // addEntryToDb 함수를 작성합니다.
-const addEntryToDb = (storeName, entry) => {};
+const addEntryToDb = (storeName, entry) => {
+  const database = onRequest.result;
+  const transaction = database.transaction([storeName], "readwrite");
+  const store = transaction.objectStore(storeName);
+  store.add(entry);
+};
 
 // clearAllEntries 함수를 작성합니다.
-const clearAllEntries = (storeName) => {};
+const clearAllEntries = (storeName) => {
+  const database = onRequest.result;
+  const transaction = database.transaction([storeName], "readwrite");
+  const store = transaction.objectStore(storeName);
+  store.clear();
+};
 
 //여기서부터 아래의 모든 주석은 참고용, 학습용입니다.
 //수정하지 않아도 됩니다.
