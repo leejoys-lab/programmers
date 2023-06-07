@@ -55,7 +55,7 @@ i arr[i]
 
 /* 
 // 참고 답안 (한 줄 코딩!)
-funxtioni solution(arr, queries){
+function solution(arr, queries){
 
     return queries.map(([s,e,k]) => {
         arr.slice(s, e+1)
