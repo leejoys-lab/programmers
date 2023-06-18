@@ -10,3 +10,12 @@ function solution(n, k) {
     }
     return answer;
 }
+
+// 다른 풀이 (i는 k부터 시작하고 i를 k만큼씩 증가)
+function solution(n, k) {
+    var answer = [];
+    for(let i = k ; i <= n; i+=k){
+        answer.push(i)
+    }
+    return answer;
+}
